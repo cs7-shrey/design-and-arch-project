@@ -1,0 +1,10 @@
+torch>=2.6
+numpy>=2.0
+h5py>=3.11
+matplotlib>=3.9
+scipy>=1.14
+scikit-learn>=1.5
+pillow>=10.0
+ipykernel>=6.0
+nbformat>=5.0
+nbclient>=0.10

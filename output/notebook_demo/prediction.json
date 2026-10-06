@@ -1,0 +1,18 @@
+{
+  "input": "data/mat/28.mat",
+  "variant": "srb",
+  "seed": 17,
+  "predicted_class": "pituitary",
+  "class_probabilities": {
+    "meningioma": 0.4329986572265625,
+    "glioma": 0.015920022502541542,
+    "pituitary": 0.5510813593864441
+  },
+  "mask_derived_bbox_xyxy_exclusive": [
+    165,
+    169,
+    232,
+    215
+  ],
+  "notes": "Research demo trained on tumor-positive slices only. Bounding box comes from the segmentation mask, not an object detector. Full-resolution display uses interpolated 128x128 predictions."
+}

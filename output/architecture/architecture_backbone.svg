@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="white"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="40" fill="#142A38" font-weight="700" text-anchor="start"><tspan x="48" y="72">Backbone and soft ROI gates</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="117">Tensor dimensions use height x width x channels</tspan></text>
+<polyline points="160,220 160,270" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="160,270 164.5,260 155.5,260" fill="#728692"/>
+<polyline points="160,340 160,390" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="160,390 164.5,380 155.5,380" fill="#728692"/>
+<polyline points="160,460 160,510" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="160,510 164.5,500 155.5,500" fill="#728692"/>
+<polyline points="270,549 1010,549 1010,460" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="1010,460 1005.5,470 1014.5,470" fill="#728692"/>
+<polyline points="1010,390 1010,340" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="1010,340 1005.5,350 1014.5,350" fill="#728692"/>
+<polyline points="1010,270 1010,220" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="1010,220 1005.5,230 1014.5,230" fill="#728692"/>
+<polyline points="270,185 495,185" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="495,185 485,180.5 485,189.5" fill="#728692"/>
+<polyline points="735,185 900,185" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="900,185 890,180.5 890,189.5" fill="#728692"/>
+<polyline points="270,305 495,305" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="495,305 485,300.5 485,309.5" fill="#728692"/>
+<polyline points="735,305 900,305" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="900,305 890,300.5 890,309.5" fill="#728692"/>
+<polyline points="270,425 495,425" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="495,425 485,420.5 485,429.5" fill="#728692"/>
+<polyline points="735,425 900,425" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="900,425 890,420.5 890,429.5" fill="#728692"/>
+<polyline points="615,625 615,635 810,635 810,131 615,131" fill="none" stroke="#008879" stroke-width="2.4"/>
+<polyline points="615,131 615,150" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="615,150 619.5,140 610.5,140" fill="#008879"/>
+<polyline points="810,251 615,251 615,270" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="615,270 619.5,260 610.5,260" fill="#008879"/>
+<polyline points="810,371 615,371 615,390" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="615,390 619.5,380 610.5,380" fill="#008879"/>
+<polyline points="270,568 470,568" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="470,568 460,563.5 460,572.5" fill="#008879"/>
+<rect x="50" y="150" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="160" y="185">Encoder 1</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="160" y="216">128 x 128 x 16</tspan></text>
+<rect x="50" y="270" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="160" y="305">Encoder 2</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="160" y="336">64 x 64 x 32</tspan></text>
+<rect x="50" y="390" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="160" y="425">Encoder 3</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="160" y="456">32 x 32 x 64</tspan></text>
+<rect x="50" y="510" width="220" height="90" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="160" y="545">Bottleneck</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="160" y="576">16 x 16 x 128</tspan></text>
+<rect x="495" y="150" width="240" height="70" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="615" y="185">Soft ROI gate</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="615" y="216">S' = S * (0.5 + R)</tspan></text>
+<rect x="495" y="270" width="240" height="70" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="615" y="305">Soft ROI gate</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="615" y="336">S' = S * (0.5 + R)</tspan></text>
+<rect x="495" y="390" width="240" height="70" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="615" y="425">Soft ROI gate</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="615" y="456">S' = S * (0.5 + R)</tspan></text>
+<rect x="900" y="150" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1010" y="185">Decoder 1 / F</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1010" y="216">128 x 128 x 16</tspan></text>
+<rect x="900" y="270" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1010" y="305">Decoder 2</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1010" y="336">64 x 64 x 32</tspan></text>
+<rect x="900" y="390" width="220" height="70" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1010" y="425">Decoder 3</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1010" y="456">32 x 32 x 64</tspan></text>
+<rect x="470" y="555" width="290" height="70" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="615" y="590">Coarse ROI head</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="615" y="621">R: 16 x 16 x 1</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#008879" font-weight="400" text-anchor="start"><tspan x="835" y="602">Resize R at each scale</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="start"><tspan x="288" y="249">2 x 2</tspan><tspan x="288" y="270.24">max pool</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="676">Decoder step: bilinear upsample, concatenate the gated skip, then apply a double convolution.</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="708">Each block: [Conv 3 x 3 + GroupNorm + SiLU] x 2. Final features F feed the refinement heads.</tspan></text>
+</svg>

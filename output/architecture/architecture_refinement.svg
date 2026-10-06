@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="white"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="40" fill="#142A38" font-weight="700" text-anchor="start"><tspan x="48" y="72">Boundary-guided refinement</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="117">All maps below have 128 x 128 spatial resolution after resizing R</tspan></text>
+<polyline points="255,245 325,245" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="325,245 315,240.5 315,249.5" fill="#728692"/>
+<polyline points="255,245 286,245 286,435 325,435" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="325,435 315,430.5 315,439.5" fill="#728692"/>
+<polyline points="555,245 630,245" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="630,245 620,240.5 620,249.5" fill="#728692"/>
+<polyline points="790,245 865,245" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="865,245 855,240.5 855,249.5" fill="#728692"/>
+<polyline points="1105,275 1250,275 1250,640 1210,640 1210,625" fill="none" stroke="#7251A6" stroke-width="2.5"/>
+<polygon points="1210,625 1205.5,635 1214.5,635" fill="#7251A6"/>
+<polyline points="555,435 785,435" fill="none" stroke="#AD691D" stroke-width="2.5"/>
+<polygon points="785,435 775,430.5 775,439.5" fill="#AD691D"/>
+<polyline points="925,325 925,385" fill="none" stroke="#7251A6" stroke-width="2.5"/>
+<polygon points="925,385 929.5,375 920.5,375" fill="#7251A6"/>
+<polyline points="433,550 433,520 815,520 815,510" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="815,510 810.5,520 819.5,520" fill="#008879"/>
+<polyline points="630,550 630,535 925,535 925,510" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="925,510 920.5,520 929.5,520" fill="#728692"/>
+<polyline points="440,200 440,155 1190,155 1190,545" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="1190,545 1194.5,535 1185.5,535" fill="#728692"/>
+<polyline points="1065,458 1135,458 1135,545" fill="none" stroke="#7251A6" stroke-width="2.5"/>
+<polygon points="1135,545 1139.5,535 1130.5,535" fill="#7251A6"/>
+<rect x="45" y="200" width="210" height="90" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="150" y="236">Features F</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="150" y="267">128 x 128 x 16</tspan></text>
+<rect x="325" y="200" width="230" height="100" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="440" y="236">Mask head</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="440" y="267">Conv 1 x 1</tspan><tspan x="440" y="290.6">Logit z</tspan></text>
+<rect x="630" y="200" width="160" height="90" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="710" y="235">Sigmoid</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="710" y="266">p = sigmoid(z)</tspan></text>
+<rect x="865" y="200" width="240" height="125" rx="8" fill="#F0EAF8" stroke="#7251A6" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="985" y="236">Uncertainty proxy</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="985" y="267">u = 4p(1-p)</tspan></text>
+<rect x="325" y="385" width="230" height="115" rx="8" fill="#FFF0DB" stroke="#AD691D" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="440" y="419">Boundary head</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="440" y="450">Conv 3 x 3: 16 to 8</tspan><tspan x="440" y="471.24">SiLU + Conv 1 x 1</tspan><tspan x="440" y="492.48">Sigmoid: boundary b</tspan></text>
+<rect x="785" y="385" width="280" height="125" rx="8" fill="#FFF0DB" stroke="#AD691D" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="925" y="419">Residual head</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="925" y="450">Inputs: [F, R, b, u]</tspan><tspan x="925" y="471.24">Conv 3 x 3: 19 to 16</tspan><tspan x="925" y="492.48">SiLU + Conv 1 x 1 to 1</tspan></text>
+<rect x="325" y="550" width="215" height="75" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="432.5" y="584">R (same ROI map)</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="432.5" y="615">Bilinearly resized</tspan></text>
+<rect x="550" y="550" width="210" height="75" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="655" y="582">F (same tensor)</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="16" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="655" y="613">16 channels</tspan></text>
+<rect x="980" y="545" width="255" height="80" rx="8" fill="#F0EAF8" stroke="#7251A6" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1107.5" y="579">Final fusion</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1107.5" y="610">z_final = z + u * delta_z</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#AD691D" font-weight="400" text-anchor="start"><tspan x="648" y="423">b</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="start"><tspan x="747" y="147">z bypass</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#7251A6" font-weight="400" text-anchor="start"><tspan x="1077" y="448">delta_z</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#7251A6" font-weight="400" text-anchor="start"><tspan x="1223" y="378">u</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#142A38" font-weight="400" text-anchor="start"><tspan x="50" y="683">Final mask = sigmoid(z_final) &gt;= 0.5. The residual output layer starts at zero.</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="712">R and F input boxes are references to the same tensors, not additional prediction branches.</tspan></text>
+</svg>

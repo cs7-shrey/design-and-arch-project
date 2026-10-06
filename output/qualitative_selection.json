@@ -1,0 +1,10 @@
+{
+  "seed": 17,
+  "fixed_examples": [
+    "28.mat",
+    "2216.mat",
+    "1487.mat"
+  ],
+  "selection_rule": "first test slice per class in frozen manifest",
+  "worst_relative_case": "2803.mat"
+}

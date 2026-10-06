@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="white"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="40" fill="#142A38" font-weight="700" text-anchor="start"><tspan x="48" y="72">SoftROI-Boundary U-Net</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="117">Architecture overview of the implemented model</tspan></text>
+<polyline points="210,333 280,333" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="280,333 270,328.5 270,337.5" fill="#728692"/>
+<polyline points="510,333 590,333" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="590,333 580,328.5 580,337.5" fill="#728692"/>
+<polyline points="835,333 925,333" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="925,333 915,328.5 915,337.5" fill="#728692"/>
+<polyline points="395,283 395,194 550,194" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="550,194 540,189.5 540,198.5" fill="#008879"/>
+<polyline points="690,239 690,283" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="690,283 694.5,273 685.5,273" fill="#008879"/>
+<polyline points="830,194 1070,194 1070,283" fill="none" stroke="#008879" stroke-width="2.5"/>
+<polygon points="1070,283 1074.5,273 1065.5,273" fill="#008879"/>
+<polyline points="395,390 395,502" fill="none" stroke="#728692" stroke-width="2.5"/>
+<polygon points="395,502 399.5,492 390.5,492" fill="#728692"/>
+<polyline points="1070,390 1070,502" fill="none" stroke="#7251A6" stroke-width="2.5"/>
+<polygon points="1070,502 1074.5,492 1065.5,492" fill="#7251A6"/>
+<rect x="45" y="283" width="165" height="107" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="127.5" y="319">MRI input</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="127.5" y="350">128 x 128 x 1</tspan></text>
+<rect x="280" y="283" width="230" height="107" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="395" y="319">Shared encoder</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="395" y="350">4 feature scales</tspan><tspan x="395" y="373.6">16 / 32 / 64 / 128</tspan></text>
+<rect x="590" y="283" width="245" height="107" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="712.5" y="319">Guided decoder</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="712.5" y="350">3 gated skips</tspan><tspan x="712.5" y="373.6">F: 128 x 128 x 16</tspan></text>
+<rect x="925" y="283" width="305" height="107" rx="8" fill="#FFF0DB" stroke="#AD691D" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1077.5" y="319">Boundary refinement</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1077.5" y="350">Mask + boundary heads</tspan><tspan x="1077.5" y="373.6">Uncertainty-weighted residual</tspan></text>
+<rect x="550" y="146" width="280" height="93" rx="8" fill="#E0F4EF" stroke="#008879" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="22" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="690" y="181">Coarse tumor map R</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="19" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="690" y="212">1 x 1 convolution + sigmoid</tspan><tspan x="690" y="234.42">16 x 16 x 1</tspan></text>
+<rect x="275" y="502" width="250" height="102" rx="8" fill="#EEF3F7" stroke="#728692" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="400" y="538">Tumor-type head</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="400" y="569">Global pool + linear</tspan><tspan x="400" y="592.6">3 class logits</tspan></text>
+<rect x="925" y="502" width="305" height="102" rx="8" fill="#F0EAF8" stroke="#7251A6" stroke-width="1.6"/>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="23" fill="#142A38" font-weight="700" text-anchor="middle"><tspan x="1077.5" y="538">Final tumor mask</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#526975" font-weight="400" text-anchor="middle"><tspan x="1077.5" y="569">sigmoid(z + u * delta_z)</tspan><tspan x="1077.5" y="592.6">Threshold = 0.5</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#008879" font-weight="400" text-anchor="start"><tspan x="407" y="177">Bottleneck</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#008879" font-weight="400" text-anchor="start"><tspan x="695" y="268">Resized R</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="18" fill="#008879" font-weight="400" text-anchor="start"><tspan x="883" y="181">R for refinement</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="17" fill="#526975" font-weight="400" text-anchor="start"><tspan x="516" y="321">Features</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#526975" font-weight="400" text-anchor="start"><tspan x="870" y="323">F</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#008879" font-weight="400" text-anchor="start"><tspan x="555" y="454">Gate: S' = S * (0.5 + R)</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="20" fill="#7251A6" font-weight="400" text-anchor="start"><tspan x="555" y="497">Uncertainty: u = 4p(1-p)</tspan></text>
+<text font-family="Helvetica Neue,Arial,sans-serif" font-size="21" fill="#526975" font-weight="400" text-anchor="start"><tspan x="50" y="682">MRI intensities are the only model input. Ground-truth masks supervise training losses only.</tspan></text>
+</svg>

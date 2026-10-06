@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.DS_Store
+data/processed/
+runs/**/checkpoints/
+.presentation-build/node_modules
+.presentation-build/previews/
+.presentation-build/*.pptx
+.codex-finalizer/
+data/
+.presentation-build/
+.chart-data-*/
+runs/
